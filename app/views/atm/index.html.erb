@@ -1,10 +1,7 @@
-<h1>What do you need?</h1>
+<h1 >What do you need?</h1>
 
-<p><%= link_to 'Show Balance', atm_show_bal_path %> |
-<%= link_to 'Withdraw Cash', atm_transac_path%></p>
+<%= link_to 'Show Balance', atm_show_bal_path, class:"btn  btn-lg btn-outline-light btn-block" %>
+<%= link_to 'Deposit Cash', atm_deposit_path, class:"btn  btn-lg btn-outline-light btn-block" %>
+<%= link_to 'Withdraw Cash', atm_transac_path, class:"btn  btn-lg btn-outline-light btn-block" %>
 
 
-<div class="d-grid gap-2">
-  <button class="btn btn-primary" type="button">Button</button>
-  <button class="btn btn-primary" type="button">Button</button>
-</div>

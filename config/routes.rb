@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   get 'atm/transac'
   get 'atm/show_bal'
   get 'atm/signup'
+  get 'atm/deposit'
 
 end
