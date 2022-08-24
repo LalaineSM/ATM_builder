@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get 'atm/signup'
   get 'atm/deposit'
 
+  post 'users', to: 'atm#create'
+
 end
