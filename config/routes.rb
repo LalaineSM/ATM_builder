@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'atm/transac'
   get 'atm/show_bal'
   get 'atm/deposit'
-  post 'withdraw', to: 'atm#withdraw'
+  get 'transac_complete',  to: 'atm#transac_complete'
+  
+  post 'withdraw',         to: 'atm#withdraw'
 
 end

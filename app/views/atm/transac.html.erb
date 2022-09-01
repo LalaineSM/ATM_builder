@@ -1,6 +1,10 @@
 <h1> How much would you like to withdraw? </h1>
 
-  <%= form_tag(withdraw_path, data: {turbo: false}) do %>
+<% if params[:error_input].present? %>
+  <h5><%= params[:error_input]%></h5>
+<% end %>
+
+<%= form_tag(withdraw_path, data: {turbo: false}) do %>
   <%= text_field_tag 'amount', nil, autofocus: true, placeholder: "Amount", required: true %>
-<div><%= submit_tag 'Save' %></div>
+  <div><%= submit_tag 'Save' %></div>
 <% end %>
