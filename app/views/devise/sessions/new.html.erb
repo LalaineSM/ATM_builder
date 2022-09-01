@@ -1,0 +1,46 @@
+<div class="main-w3layouts wrapper">
+  <h1>ABSYS ATM</h1>
+  <div class="main-agileinfo">
+    <div class="agileits-top">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <%= f.text_field :username, autofocus: true, placeholder: "Username", autocomplete: "username", required: true %>
+        <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password" %>
+        <% if devise_mapping.rememberable? %>
+          <div class="field">
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me %>
+          </div>
+        <% end %>   
+        <%= f.submit "Log in", class: "btn btn-lg" %>
+        <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+          <%= link_to "Sign up", new_registration_path(resource_name), class: "btn btn-lg" %>
+        <% end %> 
+        
+        <div class="wthree-text">
+          <div class="clear"> </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <!-- copyright -->
+  <div class="colorlibcopy-agile" style="bottom: 0.5rem !important">
+    <p>© ABSYS ATM | All rights reserved</p>
+  </div>
+  <!-- //copyright -->
+  <ul class="colorlib-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+
+
+
+<%= render "devise/shared/links" %>

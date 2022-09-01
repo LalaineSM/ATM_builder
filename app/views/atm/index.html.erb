@@ -3,4 +3,4 @@
 <%= link_to 'Show Balance', atm_show_bal_path, class:"btn  btn-lg btn-outline-light btn-block" %>
 <%= link_to 'Deposit Cash', atm_deposit_path, class:"btn  btn-lg btn-outline-light btn-block" %>
 <%= link_to 'Withdraw Cash', atm_transac_path, class:"btn  btn-lg btn-outline-light btn-block" %>
-<%= link_to 'End Transaction', atm_signup_path, class:"btn  btn-lg btn-outline-light col text-center" %>
+<%= button_to 'End Transaction', destroy_baccount_session_path, method: :delete, data:{turbo: false}, class:"btn  btn-lg btn-outline-light col text-center"%>
