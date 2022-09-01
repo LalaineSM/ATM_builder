@@ -1,9 +1,9 @@
-<h1> Your account has  </h1>
+<h1> <%= "Your account has #{current_baccount.total_amount}" %> </h1>
 
 <div class="container">
   <div class="row">
-    <%= link_to 'Back to Home Screen', atm_index_path, class:"btn  btn-lg btn-outline-light col text-center" %>
-    <%= link_to 'End Transaction', atm_signup_path, class:"btn  btn-lg btn-outline-light col text-center" %>
+    <%= link_to 'Back to Home Screen', root_path, class:"btn  btn-lg btn-outline-light col text-center" %>
+    <%= button_to 'End Transaction', destroy_baccount_session_path, method: :delete, data:{turbo: false}, class:"btn  btn-lg btn-outline-light col text-center"%>
   </div>
 </div>
 

@@ -7,18 +7,20 @@ class AtmController < ApplicationController
 
   # baccount_session
 
-
-
   def index
   end
 
   def login
-    
   end
 
   def transac
   end
 
   def show_bal
+  end
+
+  def withdraw
+    params[:amount]
+    
   end
 end
